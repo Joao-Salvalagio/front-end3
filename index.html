@@ -6,19 +6,47 @@
     <title>Luz - Aula 19-03</title>
     <style>
         img{
-           width: 200px; 
+           width: 400px; 
+        }
+        .sec {
+        display: flex;   
+        justify-content: center; 
+        align-items: center;
+        height: 95vh;
+        text-align: center;
+        font-size: 25px;
+        }
+        body{
+            background-color: pink;
+        }
+        button{
+            font-size: 18px;
+            padding: 15px 30px; 
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;  
+        }
+        .lig:hover {
+            background-color: #45a049;
+        }
+        .des:hover {
+            background-color: red;
         }
     </style>
 </head>
 
 <body>
+    <section class="sec">
+    <div>
     <h1>Primeira mágica</h1>
     <p>Deixe a gente feliz, clique no botao do adrianin! obs: ele é o sem barba.</p>
 
-    <button onclick="ligar()">Feliz</button>
+    <button class="lig" onclick="ligar()">Feliz</button>
     <img id="lampada" src="imagens/triste.jpeg" alt="Lampada apagada.">
-    <button onclick="desligar()">Triste</button>
+    <button class="des" onclick="desligar()">Triste</button>
 
     <script src="js/script.js"></script>
+    </div>
+    </section>
 </body>
 </html>
